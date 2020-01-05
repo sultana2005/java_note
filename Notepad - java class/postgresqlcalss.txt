@@ -1,0 +1,61 @@
+package PGSQL;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class PostGreSQL {
+
+	public static void main(String[] args) throws Exception {
+		//construct a postgresql database url (dbyrl)
+		String dburl = "jdbc:postgresql://localhost:5432/sharmindb";
+	
+		
+		String query = "select * from students";
+		String username = "postgres";
+		String password = "4444";
+	
+		Class.forName("org.postgresql.Driver");
+		Connection con = DriverManager.getConnection(dburl, username, password);
+
+		Statement stmt = con.createStatement();
+		
+		ResultSet rs = stmt.executeQuery(query);
+		
+		while (rs.next()){
+			System.out.println(" ID : " + "LAST NAME:");
+		}
+	}
+
+package PGSQL;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class PostGreSQL {
+
+	public static void main(String[] args) throws Exception {
+		//construct a postgresql database url (dbyrl)
+		String dburl = "jdbc:postgresql://localhost:5432/sharmindb";
+	
+		
+		String query = "select * from students";
+		String username = "postgres";
+		String password = "4444";
+	
+		Class.forName("org.postgresql.Driver");
+		Connection con = DriverManager.getConnection(dburl, username, password);
+
+		Statement stmt = con.createStatement();
+		
+		ResultSet rs = stmt.executeQuery(query);
+		
+		while (rs.next()){
+			System.out.println(" ID:" +  rs.getInt(1) + "  LASTNAME:"+rs.getString(2)+"firstname:"+rs.getString(3)+"address:"+rs.getString(5));
+		}
+	}
+
+}

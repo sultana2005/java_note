@@ -1,0 +1,10 @@
+connecting PostgreSQL to java application
+
+for this we need to have
+1. a connector,connector type
+2. a database, DB Type
+3. a user-POSTGRES
+4. password
+5. port no
+6. hos-local host/127.0.0.1
+7. 

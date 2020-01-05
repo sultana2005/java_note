@@ -1,0 +1,215 @@
+1. package myVcetorClass;
+
+import java.util.Vector;
+
+class VectorCMondaylass {
+
+	public static void main(String[] args) {
+		
+		Vector myVector = new Vector(10,5);
+		myVector.add("Vector");
+		myVector.add("fahmi");
+		myVector.add(23.987);
+		myVector.add(234.567f);
+		myVector.add(2345667l);
+		myVector.add(true);
+		myVector.add("d");
+		myVector.add("new York");
+		myVector.add(103);
+		myVector.add(3456);
+		myVector.add(11);
+		
+		System.out.println(myVector.capacity()); //capacity:total no of positions(places) for values
+		System.out.println(myVector.size());//size: total no of element
+
+	}
+
+}
+
+2. //1st way to print all the vectoe
+		System.out.println("the element of vectot is " + myVector); //call all the vector
+
+		
+		//2nd way to print all the vector
+		
+		for (int i =0; i <myVector.size(); i++){
+			System.out.print(myVector.get(i) + ",");
+			
+//3rd way
+		//For LOOP Enhance
+		for (Object o : myVector){
+			System.out.print(o + ",");
+			
+
+package myVcetorClass;
+
+import java.util.Collections;
+//import java.util.Iterator;
+//import java.util.Vector;
+import java.util.Vector;
+
+//import java.util.ListIterator;
+
+class VectorCMondaylass {
+
+	public static void main(String[] args) {
+		
+		Vector myVector = new Vector(11);
+		myVector.add(1);
+		myVector.add(3);
+		myVector.add(23);
+		myVector.add(234);
+		myVector.add(25);
+		myVector.add(123);
+		myVector.add(99);
+		myVector.add(56);
+		myVector.add(103);
+		myVector.add(34);
+		myVector.add(111); 
+		
+		Collections.sort(myVector , Collections.reverseOrder()); //ASC ORDER
+		System.out.println(myVector);
+		
+		
+		
+		
+		
+		//11th value/element
+		
+		/*
+		 System.out.println(myVector.capacity());   
+		 capacity:total no of positions(places) for values
+		 
+		System.out.println(myVector.size());  
+		 size: total no of elements
+		
+		Forloop
+		1st way to print all the vectoe
+		System.out.println("the element of vectot is " + myVector); 
+		call all the vector
+
+		
+		2nd way to print all the vector
+		
+		//for (int i =0; i <myVector.size(); i++){
+			//System.out.print(myVector.get(i) + ",");
+		
+		//3rd way
+		//For LOOP Enhance
+		
+		
+		//4th way(lamba expression)
+		myVector.forEach(n->System.out.println(n));
+		
+		//5th way
+		myVector.forEach(System.out::println);
+		
+		//6th way Iterator
+		
+		Iterator<Object> it = myVector.iterator();
+		while(it.hasNext()) {
+			Object value = it.next();
+			System.out.println(value);
+			
+			//7th way ListIterator
+			ListIterator<Object> lit = myVector.listiterator();
+			while(lit.hasPrevious()) {
+				Object value  = it.previous();
+				System.out.println(value);
+				
+				//myVector.
+				
+				
+				//Collections:sorting
+				Collections.sort(myVector);
+				System.out.println(myVector);
+				*/
+				
+		
+	
+				
+				
+				
+			
+			
+			
+		}
+	}
+
+}
+
+
+map
+
+1. public class MapDemo {
+
+	public static void main(String[] args) {
+	
+		
+		Map<String, String> phoneBook = new HashMap<String, String>();
+		
+		phoneBook.put("Ist", "First");
+		phoneBook.put("2nd", "Second");
+		phoneBook.put("3rd", "Third");
+		phoneBook.put("4th", "Fourth");
+		phoneBook.put("5th", "Fifth");
+		phoneBook.put("6th", "Sixth");
+		phoneBook.put("7th", "Seven");
+		
+		System.out.println(phoneBook);
+		
+		System.out.println(phoneBook.isEmpty());
+		System.out.println(phoneBook.values());
+		System.out.println(phoneBook.keySet());
+		System.out.println(phoneBook.entrySet());
+		System.out.println(phoneBook.size());
+		
+		
+
+2.
+package MapClass;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+	
+		
+		Map<String, String> phoneBook = new HashMap<String, String>();
+		
+		phoneBook.put("Ist", "First");
+		phoneBook.put("2nd", "Second");
+		phoneBook.put("3rd", "Third");
+		phoneBook.put("4th", "Fourth");
+		phoneBook.put("5th", "Fifth");
+		phoneBook.put("6th", "Sixth");
+		phoneBook.put("7th", "Seven");
+		
+		System.out.println(phoneBook);
+		
+		System.out.println(phoneBook.isEmpty());
+		System.out.println(phoneBook.values());
+		System.out.println(phoneBook.keySet());
+		System.out.println(phoneBook.entrySet());
+		System.out.println(phoneBook.size());
+		
+		
+		for (Object o : phoneBook.keySet()){
+			System.out.println(o);
+			
+			//we need to try the rest
+				
+			
+		}
+		
+		//for (int i =0; i <phoneBook.size(); i++) {
+			//System.out.println(phoneBook.get(key));
+		}
+		
+		
+	}
+
+
+

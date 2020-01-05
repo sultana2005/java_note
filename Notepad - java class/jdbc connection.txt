@@ -1,0 +1,59 @@
+			
+		JDBC CONNECTION:
+Code:
+
+package jdbctest;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class JDBCDemo {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+
+		String dburl = "jdbc:mysql://localhost:3306/sakila";
+		String username ="root";
+		String password= "4444";
+		
+		String dbQuery = "Select * from Customer limit 5";
+		
+		
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		Connection con = DriverManager.getConnection(dburl, username, password);
+		
+		Statement stmt = con.createStatement();
+		
+		ResultSet rs = stmt.executeQuery(dbQuery);
+		
+		while(rs.next()){
+			System.out.println("Customer id: " + rs.getInt(1) + " Customer First Name: " +rs.getString(3)); 
+			
+		}
+	}
+
+}
+
+RESULT:
+Customer id: 1 Customer First Name: MARY
+Customer id: 2 Customer First Name: PATRICIA
+Customer id: 3 Customer First Name: LINDA
+Customer id: 4 Customer First Name: BARBARA
+Customer id: 5 Customer First Name: ELIZABETH
+
+
+just add email:
+while(rs.next()){
+			System.out.println("Customer id: " + rs.getInt(1) + " Customer First Name: " +rs.getString(3) + "Email "+rs.getNString(5)); 
+			
+		}
+
+result:
+Customer id: 1 Customer First Name: MARYEmail MARY.SMITH@sakilacustomer.org
+Customer id: 2 Customer First Name: PATRICIAEmail PATRICIA.JOHNSON@sakilacustomer.org
+Customer id: 3 Customer First Name: LINDAEmail LINDA.WILLIAMS@sakilacustomer.org
+Customer id: 4 Customer First Name: BARBARAEmail BARBARA.JONES@sakilacustomer.org
+Customer id: 5 Customer First Name: ELIZABETHEmail ELIZABETH.BROWN@sakilacustomer.org

@@ -1,0 +1,22 @@
+HDFS refers to the working strength of a system in unfavorable conditions and how that system can handle such situation
+It's crucial for efficient NameNode recovery and restart, and is an important indicator of overall cluster health
+
+Ozzie scheduler
+
+
+
+
+in my team i have 6 developers, one scrum masters, one project managers, one stakeholders.
+
+checksum verification compares two files in hdfs system...
+
+it communicated beween two nodes for multi tier application...
+
+it uses secondary namenode to checkpoint all the failures and process while namenodes goes up..
+
+There are many sources such as mysql, oracle, teradata, DB2, EXADATA,MARIADB..
+
+
+
+
+

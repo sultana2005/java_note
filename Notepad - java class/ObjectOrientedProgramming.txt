@@ -1,0 +1,72 @@
+package oopsClass;
+
+public class Junior extends Senior {
+
+	public static void main(String[] args) {
+		
+		//creating an object of junior class
+		Junior jr = new Junior();
+		
+		jr.studyHard();
+		
+		System.out.println("need to study");
+
+	}
+
+}
+
+
+intrerface
+package oopsClass;
+
+public interface GemoStone {
+	
+	public void twentyk();
+	
+	public void sum(int a, int b);
+	
+	public double totalAmt(int x, int y);
+
+	
+		
+
+	}
+
+implements examples:
+package oopsClass;
+
+public class DepartmentalStore implements Diamond {
+
+	@Override
+	public void twentyk() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sum(int a, int b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double totalAmt(int x, int y) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+
+}
+interface extends between two interface
+package oopsClass;
+
+public interface Diamond extends Accessory, Jewelry{
+	public void twentyk();
+	
+	public void sum(int a, int b);
+	
+	public double totalAmt(int x, int y);
+
+	
+
+}
